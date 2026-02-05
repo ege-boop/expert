@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert Bridge - Global recruitment platform connecting employers with pre-verified international talent in Tech, Healthcare, and Engineering.">
+    <title>Expert Bridge - Pre-Verified Global Talent</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo/logo.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <img src="logo/logo.png" alt="Expert Bridge" class="loading-logo">
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo">
+                    <img src="logo/logo.png" alt="Expert Bridge">
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#talent" data-translate="nav_talent">Talent Pool</a></li>
+                    <li><a href="#solutions" data-translate="nav_solutions">Solutions</a></li>
+                    <li><a href="#process" data-translate="nav_process">Process</a></li>
+                    <li><a href="#pricing" data-translate="nav_pricing">Pricing</a></li>
+                    <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
+                </ul>
+                
+                <div class="nav-right">
+                    <div class="language-selector">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="de">DE</button>
+                        <button class="lang-btn" data-lang="tr">TR</button>
+                    </div>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-video-container">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="video/expertbridge-vmake.mov" type="video/mp4">
+                <source src="video/expertbridge-vmake.mov" type="video/quicktime">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-translate="hero_title">Pre-Verified Talent. Ready Now.</h1>
+                <p class="hero-subtitle" data-translate="hero_subtitle">Recruit from our pool of 500+ verified professionals in Tech, Healthcare and Engineering. Germany and USA.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary" data-translate="cta_primary">Get Started</a>
+                    <a href="#talent" class="btn btn-secondary" data-translate="cta_secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label" data-translate="stat_professionals">Verified Professionals</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">180+</div>
+                    <div class="stat-label" data-translate="stat_companies">Companies Served</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">6w</div>
+                    <div class="stat-label" data-translate="stat_time">Average Time to Hire</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label" data-translate="stat_satisfaction">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- University Ticker -->
+    <section class="university-ticker">
+        <div class="ticker-header">
+            <h3 data-translate="university_title">Our Talent Graduated From</h3>
+        </div>
+        <div class="ticker-container">
+            <div class="ticker-track" id="tickerTrack">
+                <div class="ticker-item"><img src="logo/MIT_id-b5r6bv6_1.png" alt="MIT"></div>
+                <div class="ticker-item"><img src="logo/Harvard University_idRqymu3Cr_1.png" alt="Harvard"></div>
+                <div class="ticker-item"><img src="logo/Carnegie Mellon University_Logo_1.png" alt="Carnegie Mellon"></div>
+                <div class="ticker-item"><img src="logo/UC Berkeley_Logo_1.png" alt="UC Berkeley"></div>
+                <div class="ticker-item"><img src="logo/TU Berlin_idCfIQkkHt_0.png" alt="TU Berlin"></div>
+                <div class="ticker-item"><img src="logo/Imperial College London_idAZu80ysa_0.png" alt="Imperial College"></div>
+                <div class="ticker-item"><img src="logo/Johns Hopkins Medicine_idqFc4aZZx_1.png" alt="Johns Hopkins"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Talent Network Section -->
+    <section class="section talent-network" id="talent">
+        <div class="container-fluid">
+            <!-- IT/Tech Section -->
+            <div class="talent-split">
+                <div class="talent-video-side">
+                    <video class="talent-video" autoplay muted loop playsinline>
+                        <source src="video/tech.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <div class="video-stats">
+                            <div class="video-stat-item">
+                                <span class="video-stat-number">200+</span>
+                                <span class="video-stat-label" data-translate="tech_professionals">Professionals</span>
+                            </div>
+                            <div class="video-stat-item">
+                                <span class="video-stat-number">15+</span>
+                                <span class="video-stat-label" data-translate="tech_languages">Tech Stacks</span>
+                            </div>
+                            <div class="video-stat-item">
+                                <span class="video-stat-number">4-6w</span>
+                                <span class="video-stat-label" data-translate="tech_placement">Avg Placement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="talent-content-side">
+                    <h2 data-translate="tech_title">Technology Talent for the Digital Age</h2>
+                    <p data-translate="tech_description">Connect with pre-verified IT professionals ready to drive your digital transformation. From full-stack developers to data scientists, our talent pool includes specialists across all major tech stacks.</p>
+                    
+                    <div class="talent-details">
+                        <h4 data-translate="tech_specializations">Specializations</h4>
+                        <ul class="talent-list">
+                            <li data-translate="tech_spec_1">Full-stack Developers (MERN, MEAN, Django)</li>
+                            <li data-translate="tech_spec_2">Frontend Specialists (React, Vue, Angular)</li>
+                            <li data-translate="tech_spec_3">Backend Engineers (Node.js, Python, Java)</li>
+                            <li data-translate="tech_spec_4">Mobile Developers (iOS, Android, React Native)</li>
+                            <li data-translate="tech_spec_5">Data Scientists and ML Engineers</li>
+                            <li data-translate="tech_spec_6">DevOps and Cloud Specialists (AWS, Azure, GCP)</li>
+                        </ul>
+                        
+                        <h4 data-translate="tech_experience">Experience Levels</h4>
+                        <div class="experience-badges">
+                            <span class="badge" data-translate="tech_junior">Junior (1-3 years)</span>
+                            <span class="badge" data-translate="tech_mid">Mid-level (3-6 years)</span>
+                            <span class="badge" data-translate="tech_senior">Senior (6-10 years)</span>
+                            <span class="badge" data-translate="tech_lead">Lead (10+ years)</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary" data-translate="tech_cta">Explore Tech Talent</a>
+                </div>
+            </div>
+
+            <!-- Healthcare Section -->
+            <div class="talent-split talent-split-reverse">
+                <div class="talent-content-side">
+                    <h2 data-translate="health_title">Healthcare Excellence Across Borders</h2>
+                    <p data-translate="health_description">Recruit qualified healthcare professionals who meet the highest medical standards. Every candidate is verified for medical licenses, language proficiency, and cultural competency.</p>
+                    
+                    <div class="talent-details">
+                        <h4 data-translate="health_specializations">Medical Specializations</h4>
+                        <ul class="talent-list">
+                            <li data-translate="health_spec_1">General Practitioners and Specialist Doctors</li>
+                            <li data-translate="health_spec_2">Registered Nurses (ICU, ER, Pediatric)</li>
+                            <li data-translate="health_spec_3">Medical Laboratory Technicians</li>
+                            <li data-translate="health_spec_4">Radiographers and Imaging Specialists</li>
+                            <li data-translate="health_spec_5">Physiotherapists and Allied Health</li>
+                            <li data-translate="health_spec_6">Healthcare Administrators</li>
+                        </ul>
+                        
+                        <h4 data-translate="health_verification">Verification Process</h4>
+                        <div class="verification-items">
+                            <span class="verify-item" data-translate="health_verify_1">Medical License Verified</span>
+                            <span class="verify-item" data-translate="health_verify_2">Language Certified (B2/C1)</span>
+                            <span class="verify-item" data-translate="health_verify_3">Background Checked</span>
+                            <span class="verify-item" data-translate="health_verify_4">Visa Support Included</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary" data-translate="health_cta">Explore Healthcare Talent</a>
+                </div>
+                
+                <div class="talent-video-side">
+                    <video class="talent-video" autoplay muted loop playsinline>
+                        <source src="video/hospital-vmake.mov" type="video/mp4">
+                        <source src="video/hospital-vmake.mov" type="video/quicktime">
+                    </video>
+                    <div class="video-overlay">
+                        <div class="video-stats">
+                            <div class="video-stat-item">
+                                <span class="video-stat-number">150+</span>
+                                <span class="video-stat-label" data-translate="health_professionals">Medical Professionals</span>
+                            </div>
+                            <div class="video-stat-item">
+                                <span class="video-stat-number">100%</span>
+                                <span class="video-stat-label" data-translate="health_licensed">Licensed and Verified</span>
+                            </div>
+                            <div class="video-stat-item">
+                                <span class="video-stat-number">8-12w</span>
+                                <span class="video-stat-label" data-translate="health_placement">Avg Placement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engineering Section -->
+            <div class="talent-split">
+                <div class="talent-video-side">
+                    <video class="talent-video" autoplay muted loop playsinline>
+                        <source src="video/engineering-vmake.mov" type="video/mp4">
+                        <source src="video/engineering-vmake.mov" type="video/quicktime">
+                    </video>
+                    <div class="video-overlay">
+                        <div class="video-stats">
+                            <div class="video-stat-item">
+                                <span class="video-stat-number">150+</span>
+                                <span class="video-stat-label" data-translate="eng_professionals">Engineers</span>
+                            </div>
+                            <div class="video-stat-item">
+                                <span class="video-stat-number">8+</span>
+                                <span class="video-stat-label" data-translate="eng_disciplines">Disciplines</span>
+                            </div>
+                            <div class="video-stat-item">
+                                <span class="video-stat-number">6-8w</span>
+                                <span class="video-stat-label" data-translate="eng_placement">Avg Placement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="talent-content-side">
+                    <h2 data-translate="eng_title">Engineering Expertise for Complex Projects</h2>
+                    <p data-translate="eng_description">Access qualified engineers with international experience and verified credentials. Our engineering talent pool spans civil, mechanical, electrical, and specialized disciplines.</p>
+                    
+                    <div class="talent-details">
+                        <h4 data-translate="eng_specializations">Engineering Disciplines</h4>
+                        <ul class="talent-list">
+                            <li data-translate="eng_spec_1">Civil and Structural Engineers</li>
+                            <li data-translate="eng_spec_2">Mechanical Engineers (Design, Manufacturing)</li>
+                            <li data-translate="eng_spec_3">Electrical and Electronics Engineers</li>
+                            <li data-translate="eng_spec_4">Process and Chemical Engineers</li>
+                            <li data-translate="eng_spec_5">Industrial and Production Engineers</li>
+                            <li data-translate="eng_spec_6">Project Managers and Site Engineers</li>
+                        </ul>
+                        
+                        <h4 data-translate="eng_software">Software Proficiency</h4>
+                        <div class="software-badges">
+                            <span class="badge">AutoCAD</span>
+                            <span class="badge">SolidWorks</span>
+                            <span class="badge">Revit</span>
+                            <span class="badge">ANSYS</span>
+                            <span class="badge">CATIA</span>
+                            <span class="badge">MATLAB</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary" data-translate="eng_cta">Explore Engineering Talent</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="section solutions-section" id="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="solutions_title">Why Choose Expert Bridge</h2>
+                <p data-translate="solutions_subtitle">Streamline your hiring process with our pre-vetted talent pool</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3 data-translate="solution_1_title">Pre-Verified Talent</h3>
+                    <p data-translate="solution_1_desc">Every candidate undergoes rigorous technical and background verification ensuring quality matches.</p>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 data-translate="solution_2_title">Fast Placement</h3>
+                    <p data-translate="solution_2_desc">Reduce time-to-hire with our streamlined process. Most placements completed within 6 weeks.</p>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3 data-translate="solution_3_title">International Reach</h3>
+                    <p data-translate="solution_3_desc">Access top talent across Germany and USA with full visa and relocation support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process-section" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="process_title">How It Works</h2>
+                <p data-translate="process_subtitle">Simple, transparent, and effective recruitment process</p>
+            </div>
+            
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3 data-translate="step_1_title">Tell Us Your Needs</h3>
+                    <p data-translate="step_1_desc">Share your requirements and we will match you with pre-verified candidates.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3 data-translate="step_2_title">Review Profiles</h3>
+                    <p data-translate="step_2_desc">Access detailed profiles, certifications and background-checked information.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3 data-translate="step_3_title">Interview and Select</h3>
+                    <p data-translate="step_3_desc">Conduct interviews with shortlisted candidates and make your selection.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3 data-translate="step_4_title">Seamless Onboarding</h3>
+                    <p data-translate="step_4_desc">We handle paperwork, visa processing and relocation support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos Section -->
+    <section class="clients-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="clients_title">Trusted by Leading Companies</h2>
+                <p data-translate="clients_subtitle">We have successfully placed professionals at these organizations</p>
+            </div>
+            
+            <div class="clients-grid">
+                <div class="client-logo"><img src="logo/Amazon_Logo_1.png" alt="Amazon"></div>
+                <div class="client-logo"><img src="logo/Apple_Logo_1.png" alt="Apple"></div>
+                <div class="client-logo"><img src="logo/SAP_idEDqS_YGr_1.png" alt="SAP"></div>
+                <div class="client-logo"><img src="logo/Adobe_idLnet8cfu_1.png" alt="Adobe"></div>
+                <div class="client-logo"><img src="logo/Oracle_ideA555_no_1.png" alt="Oracle"></div>
+                <div class="client-logo"><img src="logo/McKinsey & Company_idXaAYJuer_1.png" alt="McKinsey"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="pricing_title">Transparent Pricing</h2>
+                <p data-translate="pricing_subtitle">No hidden fees. Pay only when you hire.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-translate="pricing_basic_title">Basic</h3>
+                        <div class="price">
+                            <span class="price-amount">12%</span>
+                            <span class="price-period" data-translate="pricing_period">First year annual salary</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-translate="pricing_basic_1">Access to talent pool</li>
+                        <li data-translate="pricing_basic_2">Pre-verified candidates</li>
+                        <li data-translate="pricing_basic_3">Basic background checks</li>
+                        <li data-translate="pricing_basic_4">Email support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline" data-translate="pricing_cta">Get Started</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge" data-translate="pricing_popular">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 data-translate="pricing_pro_title">Professional</h3>
+                        <div class="price">
+                            <span class="price-amount">15%</span>
+                            <span class="price-period" data-translate="pricing_period">First year annual salary</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-translate="pricing_pro_1">Everything in Basic</li>
+                        <li data-translate="pricing_pro_2">Dedicated account manager</li>
+                        <li data-translate="pricing_pro_3">Visa and relocation support</li>
+                        <li data-translate="pricing_pro_4">90-day replacement guarantee</li>
+                        <li data-translate="pricing_pro_5">Priority support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" data-translate="pricing_cta">Get Started</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-translate="pricing_enterprise_title">Enterprise</h3>
+                        <div class="price">
+                            <span class="price-amount" data-translate="pricing_custom">Custom</span>
+                            <span class="price-period" data-translate="pricing_enterprise_period">Tailored solutions</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-translate="pricing_enterprise_1">Everything in Professional</li>
+                        <li data-translate="pricing_enterprise_2">Volume discounts</li>
+                        <li data-translate="pricing_enterprise_3">Custom SLA agreements</li>
+                        <li data-translate="pricing_enterprise_4">Dedicated talent team</li>
+                        <li data-translate="pricing_enterprise_5">Exclusive talent access</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline" data-translate="pricing_contact">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-translate="cta_title">Ready to Build Your Team</h2>
+                <p data-translate="cta_subtitle">Connect with 500+ pre-verified professionals today. Transparent pricing, fast placement, zero risk.</p>
+                <div class="cta-buttons">
+                    <a href="mailto:info@expertbridge.com" class="btn btn-light" data-translate="cta_demo">Schedule Demo</a>
+                    <a href="tel:+49123456789" class="btn btn-outline-light" data-translate="cta_call">Call Us Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo/logo.png" alt="Expert Bridge">
+                    </div>
+                    <p data-translate="footer_desc">Global recruitment platform connecting employers with pre-verified international talent.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer_solutions">Talent Solutions</h4>
+                    <a href="#talent" data-translate="footer_healthcare">Healthcare Talent</a>
+                    <a href="#talent" data-translate="footer_it">IT and Software</a>
+                    <a href="#talent" data-translate="footer_engineering">Engineering</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer_company">Company</h4>
+                    <a href="#solutions" data-translate="footer_process">Our Process</a>
+                    <a href="#pricing" data-translate="footer_pricing">Pricing Models</a>
+                    <a href="#" data-translate="footer_about">About Us</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer_contact_title">Contact</h4>
+                    <a href="tel:+49123456789">+49 123 456 789</a>
+                    <a href="mailto:info@expertbridge.com">info@expertbridge.com</a>
+                    <a href="#" data-translate="footer_berlin">Berlin Office</a>
+                    <a href="#" data-translate="footer_istanbul">Istanbul Office</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Expert Bridge International GmbH. <span data-translate="footer_rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
