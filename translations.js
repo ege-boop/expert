@@ -157,30 +157,310 @@ const translations = {
     },
     
     de: {
-        // ... German translations (keeping same as before)
+        // Navigation
         nav_talent: "Talentpool",
         nav_solutions: "Lösungen",
         nav_process: "Prozess",
         nav_pricing: "Preise",
         nav_contact: "Kontakt",
+        
+        // Hero Section
         hero_title: "Vorgeprüfte Talente. Sofort verfügbar.",
         hero_subtitle: "Rekrutieren Sie aus unserem Pool von über 500 verifizierten Fachkräften in Tech, Gesundheitswesen und Ingenieurwesen. Deutschland und USA.",
         cta_primary: "Jetzt starten",
         cta_secondary: "Mehr erfahren",
-        // Add all other German translations here...
+        
+        // Stats Section
+        stat_professionals: "Verifizierte Fachkräfte",
+        stat_companies: "Betreute Unternehmen",
+        stat_time: "Durchschnittliche Einstellungszeit",
+        stat_satisfaction: "Kundenzufriedenheit",
+        
+        // University Ticker
+        university_title: "Unsere Talente sind Absolventen von",
+        
+        // IT/Tech Section
+        tech_title: "Technologie-Talente für das digitale Zeitalter",
+        tech_description: "Verbinden Sie sich mit vorgeprüften IT-Profis, die bereit sind, Ihre digitale Transformation voranzutreiben. Von Full-Stack-Entwicklern bis zu Data Scientists.",
+        tech_professionals: "Fachkräfte",
+        tech_languages: "Tech-Stacks",
+        tech_placement: "Durchschn. Vermittlung",
+        tech_specializations: "Spezialisierungen",
+        tech_spec_1: "Full-Stack-Entwickler (MERN, MEAN, Django)",
+        tech_spec_2: "Frontend-Spezialisten (React, Vue, Angular)",
+        tech_spec_3: "Backend-Ingenieure (Node.js, Python, Java)",
+        tech_spec_4: "Mobile-Entwickler (iOS, Android, React Native)",
+        tech_spec_5: "Data Scientists und ML-Ingenieure",
+        tech_spec_6: "DevOps- und Cloud-Spezialisten (AWS, Azure, GCP)",
+        tech_experience: "Erfahrungsstufen",
+        tech_junior: "Junior (1-3 Jahre)",
+        tech_mid: "Mittel (3-6 Jahre)",
+        tech_senior: "Senior (6-10 Jahre)",
+        tech_lead: "Lead (10+ Jahre)",
+        tech_cta: "Tech-Talente erkunden",
+        
+        // Healthcare Section
+        health_title: "Gesundheitswesen-Exzellenz über Grenzen hinweg",
+        health_description: "Rekrutieren Sie qualifizierte Gesundheitsfachkräfte, die höchsten medizinischen Standards entsprechen. Jeder Kandidat wird auf medizinische Lizenzen, Sprachkenntnisse und kulturelle Kompetenz geprüft.",
+        health_professionals: "Medizinische Fachkräfte",
+        health_licensed: "Lizenziert und Verifiziert",
+        health_placement: "Durchschn. Vermittlung",
+        health_specializations: "Medizinische Spezialisierungen",
+        health_spec_1: "Allgemeinmediziner und Fachärzte",
+        health_spec_2: "Krankenpfleger (ICU, ER, Pädiatrie)",
+        health_spec_3: "Medizinisch-technische Assistenten",
+        health_spec_4: "Radiologieassistenten und Bildgebungsspezialisten",
+        health_spec_5: "Physiotherapeuten und Allied Health",
+        health_spec_6: "Gesundheitswesen-Administratoren",
+        health_verification: "Verifizierungsprozess",
+        health_verify_1: "Medizinische Lizenz verifiziert",
+        health_verify_2: "Sprachzertifiziert (B2/C1)",
+        health_verify_3: "Hintergrundgeprüft",
+        health_verify_4: "Visa-Unterstützung inbegriffen",
+        health_cta: "Gesundheitswesen-Talente erkunden",
+        
+        // Engineering Section
+        eng_title: "Ingenieur-Expertise für komplexe Projekte",
+        eng_description: "Zugang zu qualifizierten Ingenieuren mit internationaler Erfahrung und verifizierten Qualifikationen. Unser Ingenieur-Talentpool umfasst Bau-, Maschinen-, Elektro- und Spezialdisziplinen.",
+        eng_professionals: "Ingenieure",
+        eng_disciplines: "Disziplinen",
+        eng_placement: "Durchschn. Vermittlung",
+        eng_specializations: "Ingenieur-Disziplinen",
+        eng_spec_1: "Bau- und Statikingenieure",
+        eng_spec_2: "Maschinenbauingenieure (Design, Fertigung)",
+        eng_spec_3: "Elektro- und Elektronikingenieure",
+        eng_spec_4: "Verfahrens- und Chemieingenieure",
+        eng_spec_5: "Industrie- und Produktionsingenieure",
+        eng_spec_6: "Projektmanager und Bauleiter",
+        eng_software: "Software-Kenntnisse",
+        eng_cta: "Ingenieur-Talente erkunden",
+        
+        // Solutions Section
+        solutions_title: "Warum Expert Bridge",
+        solutions_subtitle: "Optimieren Sie Ihren Einstellungsprozess mit unserem vorgeprüften Talentpool",
+        solution_1_title: "Vorgeprüfte Talente",
+        solution_1_desc: "Jeder Kandidat durchläuft eine strenge technische und Hintergrundprüfung für qualitativ hochwertige Übereinstimmungen.",
+        solution_2_title: "Schnelle Vermittlung",
+        solution_2_desc: "Reduzieren Sie die Einstellungszeit mit unserem optimierten Prozess. Die meisten Vermittlungen innerhalb von 6 Wochen.",
+        solution_3_title: "Internationale Reichweite",
+        solution_3_desc: "Zugang zu Top-Talenten in Deutschland und den USA mit voller Visa- und Umzugsunterstützung.",
+        
+        // Process Section
+        process_title: "So funktioniert es",
+        process_subtitle: "Einfacher, transparenter und effektiver Recruiting-Prozess",
+        step_1_title: "Teilen Sie uns Ihre Anforderungen mit",
+        step_1_desc: "Teilen Sie uns Ihre Anforderungen mit und wir vermitteln Ihnen vorgeprüfte Kandidaten.",
+        step_2_title: "Profile prüfen",
+        step_2_desc: "Zugriff auf detaillierte Profile, Zertifizierungen und überprüfte Informationen.",
+        step_3_title: "Interview und Auswahl",
+        step_3_desc: "Führen Sie Interviews mit Ihren ausgewählten Kandidaten durch und treffen Sie Ihre Wahl.",
+        step_4_title: "Nahtloses Onboarding",
+        step_4_desc: "Wir kümmern uns um Formalitäten, Visa-Bearbeitung und Umzugsunterstützung.",
+        
+        // Client Logos
+        clients_title: "Vertraut von führenden Unternehmen",
+        clients_subtitle: "Wir haben erfolgreich Fachkräfte bei diesen Organisationen vermittelt",
+        
+        // Pricing Section
+        pricing_title: "Transparente Preise",
+        pricing_subtitle: "Keine versteckten Gebühren. Zahlung nur bei Einstellung.",
+        pricing_basic_title: "Basis",
+        pricing_pro_title: "Professional",
+        pricing_enterprise_title: "Enterprise",
+        pricing_period: "Erstes Jahresgehalt",
+        pricing_enterprise_period: "Maßgeschneiderte Lösungen",
+        pricing_custom: "Individuell",
+        pricing_popular: "Am beliebtesten",
+        pricing_basic_1: "Zugang zum Talentpool",
+        pricing_basic_2: "Vorgeprüfte Kandidaten",
+        pricing_basic_3: "Basis-Hintergrundprüfungen",
+        pricing_basic_4: "E-Mail-Support",
+        pricing_pro_1: "Alles aus Basis",
+        pricing_pro_2: "Persönlicher Account Manager",
+        pricing_pro_3: "Visa- und Umzugsunterstützung",
+        pricing_pro_4: "90-Tage-Ersatzgarantie",
+        pricing_pro_5: "Prioritäts-Support",
+        pricing_enterprise_1: "Alles aus Professional",
+        pricing_enterprise_2: "Mengenrabatte",
+        pricing_enterprise_3: "Individuelle SLA-Vereinbarungen",
+        pricing_enterprise_4: "Engagiertes Talente-Team",
+        pricing_enterprise_5: "Exklusiver Talente-Zugang",
+        pricing_cta: "Jetzt starten",
+        pricing_contact: "Vertrieb kontaktieren",
+        
+        // CTA Section
+        cta_title: "Bereit, Ihr Team aufzubauen",
+        cta_subtitle: "Verbinden Sie sich noch heute mit über 500 vorgeprüften Fachkräften. Transparente Preise, schnelle Vermittlung, kein Risiko.",
+        cta_demo: "Demo vereinbaren",
+        cta_call: "Rufen Sie uns an",
+        
+        // Footer
+        footer_desc: "Globale Recruiting-Plattform, die Arbeitgeber mit vorgeprüften internationalen Talenten verbindet.",
+        footer_solutions: "Talentlösungen",
+        footer_healthcare: "Gesundheitswesen Talente",
+        footer_it: "IT und Software",
+        footer_engineering: "Ingenieurwesen",
+        footer_company: "Unternehmen",
+        footer_process: "Unser Prozess",
+        footer_pricing: "Preismodelle",
+        footer_about: "Über uns",
+        footer_contact_title: "Kontakt",
+        footer_berlin: "Berliner Büro",
+        footer_istanbul: "Istanbul Büro",
+        footer_rights: "Alle Rechte vorbehalten."
     },
     
     tr: {
-        // ... Turkish translations (keeping same as before)
+        // Navigation
         nav_talent: "Yetenek Havuzu",
         nav_solutions: "Çözümler",
         nav_process: "Süreç",
         nav_pricing: "Fiyatlandırma",
         nav_contact: "İletişim",
+        
+        // Hero Section
         hero_title: "Ön-Doğrulanmış Yetenek. Şimdi Hazır.",
         hero_subtitle: "Teknoloji, Sağlık ve Mühendislik alanında 500+ doğrulanmış profesyonelden oluşan havuzumuzdan işe alın. Almanya ve ABD.",
         cta_primary: "Başlayın",
         cta_secondary: "Daha Fazla Bilgi",
-        // Add all other Turkish translations here...
+        
+        // Stats Section
+        stat_professionals: "Doğrulanmış Profesyoneller",
+        stat_companies: "Hizmet Verilen Şirketler",
+        stat_time: "Ortalama İşe Alma Süresi",
+        stat_satisfaction: "Müşteri Memnuniyeti",
+        
+        // University Ticker
+        university_title: "Yeteneklerimiz Bu Okullardan Mezun Oldu",
+        
+        // IT/Tech Section
+        tech_title: "Dijital Çağ için Teknoloji Yetenekleri",
+        tech_description: "Dijital dönüşümünüzü yönlendirmeye hazır ön-doğrulanmış BT profesyonelleriyle bağlantı kurun. Full-stack geliştiricilerden veri bilimcilere kadar tüm büyük teknoloji yığınlarında uzmanlar.",
+        tech_professionals: "Profesyoneller",
+        tech_languages: "Teknoloji Yığınları",
+        tech_placement: "Ort. Yerleştirme",
+        tech_specializations: "Uzmanlaşmalar",
+        tech_spec_1: "Full-stack Geliştiriciler (MERN, MEAN, Django)",
+        tech_spec_2: "Frontend Uzmanları (React, Vue, Angular)",
+        tech_spec_3: "Backend Mühendisleri (Node.js, Python, Java)",
+        tech_spec_4: "Mobil Geliştiriciler (iOS, Android, React Native)",
+        tech_spec_5: "Veri Bilimciler ve ML Mühendisleri",
+        tech_spec_6: "DevOps ve Bulut Uzmanları (AWS, Azure, GCP)",
+        tech_experience: "Deneyim Seviyeleri",
+        tech_junior: "Junior (1-3 yıl)",
+        tech_mid: "Orta Seviye (3-6 yıl)",
+        tech_senior: "Kıdemli (6-10 yıl)",
+        tech_lead: "Lider (10+ yıl)",
+        tech_cta: "Teknoloji Yeteneklerini Keşfedin",
+        
+        // Healthcare Section
+        health_title: "Sınırlar Ötesi Sağlık Mükemmelliği",
+        health_description: "En yüksek tıbbi standartları karşılayan kalifiye sağlık profesyonellerini işe alın. Her aday tıbbi lisanslar, dil yeterliliği ve kültürel yeterlilik için doğrulanır.",
+        health_professionals: "Tıbbi Profesyoneller",
+        health_licensed: "Lisanslı ve Doğrulanmış",
+        health_placement: "Ort. Yerleştirme",
+        health_specializations: "Tıbbi Uzmanlaşmalar",
+        health_spec_1: "Pratisyen Hekimler ve Uzman Doktorlar",
+        health_spec_2: "Kayıtlı Hemşireler (YBÜ, Acil, Pediatri)",
+        health_spec_3: "Tıbbi Laboratuvar Teknisyenleri",
+        health_spec_4: "Radyograflar ve Görüntüleme Uzmanları",
+        health_spec_5: "Fizyoterapistler ve İlgili Sağlık",
+        health_spec_6: "Sağlık Yöneticileri",
+        health_verification: "Doğrulama Süreci",
+        health_verify_1: "Tıbbi Lisans Doğrulandı",
+        health_verify_2: "Dil Sertifikalı (B2/C1)",
+        health_verify_3: "Geçmiş Kontrol Edildi",
+        health_verify_4: "Vize Desteği Dahil",
+        health_cta: "Sağlık Yeteneklerini Keşfedin",
+        
+        // Engineering Section
+        eng_title: "Karmaşık Projeler için Mühendislik Uzmanlığı",
+        eng_description: "Uluslararası deneyime ve doğrulanmış kimlik bilgilerine sahip kalifiye mühendislere erişin. Mühendislik yetenek havuzumuz inşaat, makine, elektrik ve özel disiplinleri kapsar.",
+        eng_professionals: "Mühendisler",
+        eng_disciplines: "Disiplinler",
+        eng_placement: "Ort. Yerleştirme",
+        eng_specializations: "Mühendislik Disiplinleri",
+        eng_spec_1: "İnşaat ve Yapı Mühendisleri",
+        eng_spec_2: "Makine Mühendisleri (Tasarım, İmalat)",
+        eng_spec_3: "Elektrik ve Elektronik Mühendisleri",
+        eng_spec_4: "Süreç ve Kimya Mühendisleri",
+        eng_spec_5: "Endüstri ve Üretim Mühendisleri",
+        eng_spec_6: "Proje Yöneticileri ve Saha Mühendisleri",
+        eng_software: "Yazılım Yeterliliği",
+        eng_cta: "Mühendislik Yeteneklerini Keşfedin",
+        
+        // Solutions Section
+        solutions_title: "Neden Expert Bridge",
+        solutions_subtitle: "Ön-doğrulanmış yetenek havuzumuzla işe alım sürecinizi kolaylaştırın",
+        solution_1_title: "Ön-Doğrulanmış Yetenek",
+        solution_1_desc: "Her aday, kaliteli eşleşmeler sağlamak için titiz teknik ve geçmiş doğrulamasından geçer.",
+        solution_2_title: "Hızlı Yerleştirme",
+        solution_2_desc: "Optimize edilmiş sürecimizle işe alım süresini azaltın. Çoğu yerleştirme 6 hafta içinde tamamlanır.",
+        solution_3_title: "Uluslararası Erişim",
+        solution_3_desc: "Almanya ve ABD'deki en iyi yeteneklere tam vize ve taşınma desteğiyle erişin.",
+        
+        // Process Section
+        process_title: "Nasıl Çalışır",
+        process_subtitle: "Basit, şeffaf ve etkili işe alım süreci",
+        step_1_title: "İhtiyaçlarınızı Bildirin",
+        step_1_desc: "Gereksinimlerinizi paylaşın, sizi ön-doğrulanmış adaylarla eşleştirelim.",
+        step_2_title: "Profilleri İnceleyin",
+        step_2_desc: "Detaylı profillere, sertifikalara ve geçmişi kontrol edilmiş bilgilere erişin.",
+        step_3_title: "Görüşme ve Seçim",
+        step_3_desc: "Kısa listedeki adaylarınızla görüşmeler yapın ve seçiminizi yapın.",
+        step_4_title: "Sorunsuz İşe Başlama",
+        step_4_desc: "Evrak işlerini, vize işlemlerini ve taşınma desteğini biz hallederiz.",
+        
+        // Client Logos
+        clients_title: "Önde Gelen Şirketler Tarafından Güvenilir",
+        clients_subtitle: "Bu organizasyonlara başarıyla profesyoneller yerleştirdik",
+        
+        // Pricing Section
+        pricing_title: "Şeffaf Fiyatlandırma",
+        pricing_subtitle: "Gizli ücret yok. Sadece işe aldığınızda ödeme yapın.",
+        pricing_basic_title: "Temel",
+        pricing_pro_title: "Profesyonel",
+        pricing_enterprise_title: "Kurumsal",
+        pricing_period: "İlk yıl yıllık maaş",
+        pricing_enterprise_period: "Özelleştirilmiş çözümler",
+        pricing_custom: "Özel",
+        pricing_popular: "En Popüler",
+        pricing_basic_1: "Yetenek havuzuna erişim",
+        pricing_basic_2: "Ön-doğrulanmış adaylar",
+        pricing_basic_3: "Temel geçmiş kontrolleri",
+        pricing_basic_4: "E-posta desteği",
+        pricing_pro_1: "Temel'deki her şey",
+        pricing_pro_2: "Özel hesap yöneticisi",
+        pricing_pro_3: "Vize ve taşınma desteği",
+        pricing_pro_4: "90 günlük değiştirme garantisi",
+        pricing_pro_5: "Öncelikli destek",
+        pricing_enterprise_1: "Profesyonel'deki her şey",
+        pricing_enterprise_2: "Hacim indirimleri",
+        pricing_enterprise_3: "Özel SLA anlaşmaları",
+        pricing_enterprise_4: "Özel yetenek ekibi",
+        pricing_enterprise_5: "Özel yetenek erişimi",
+        pricing_cta: "Başlayın",
+        pricing_contact: "Satış ile İletişime Geçin",
+        
+        // CTA Section
+        cta_title: "Ekibinizi Kurmaya Hazır mısınız",
+        cta_subtitle: "Bugün 500+ ön-doğrulanmış profesyonel ile bağlantı kurun. Şeffaf fiyatlandırma, hızlı yerleştirme, sıfır risk.",
+        cta_demo: "Demo Planlayın",
+        cta_call: "Bugün Bizi Arayın",
+        
+        // Footer
+        footer_desc: "İşverenleri ön-doğrulanmış uluslararası yeteneklerle buluşturan küresel işe alım platformu.",
+        footer_solutions: "Yetenek Çözümleri",
+        footer_healthcare: "Sağlık Yetenekleri",
+        footer_it: "BT ve Yazılım",
+        footer_engineering: "Mühendislik",
+        footer_company: "Şirket",
+        footer_process: "Sürecimiz",
+        footer_pricing: "Fiyatlandırma Modelleri",
+        footer_about: "Hakkımızda",
+        footer_contact_title: "İletişim",
+        footer_berlin: "Berlin Ofisi",
+        footer_istanbul: "İstanbul Ofisi",
+        footer_rights: "Tüm hakları saklıdır."
     }
 };
